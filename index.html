@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form</title>
+    <style>
+        form {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #9cd8d8;
+            background-size: contain;
+            font-size: 22px;
+
+        }
+
+        .abc {
+            padding: 50px;
+
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: rgb(255, 255, 255);
+            outline: none;
+        }
+
+        div {
+            padding: 15px 0;
+        }
+
+        hr {
+            border: 1px solid #ffffff;
+            margin-bottom: 25px;
+        }
+
+        .submit {
+            background-color: #0a28ef;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 101.5%;
+            opacity: 0.9;
+            font-weight: bold;
+           
+        }
+
+        .submit:hover {
+            transform: scale(1.2);
+        }
+
+        .box {
+            width: 15%;
+            height: 35px;
+        }
+        .inp{
+            width: 8%;
+            height: 30px;
+        }
+        .a{
+            text-decoration: none;
+            color: #000000;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="abc">
+            <h1 style="text-align: center;"> Admission Enquiry Form</h1>
+            <hr>
+            <div> Name :</div>
+            <input type="text" name="Firstname" placeholder="Firstname" required />
+            <input type="text" name="lastname" placeholder="Lastname" required />
+            <div> <label for="Date">Date of Birth :</label>
+                <input class="inp" type="date" name="Date" required>
+            </div>
+            <div>
+                <label>citzenship :</label>
+                <select  class="inp" name="citzen" id="">
+                    <option value="citzenship">Citzenship :</option>
+                    <option value="india">India</option>
+                    <option value="America">America</option>
+                    <option value="U.k.">U.k.</option>
+                </select>
+            </div>
+            <div>
+                <label>
+                    Gender :
+                </label><br>
+                Male <input type="radio" value="Male" name="gender" checked>
+                Female<input type="radio" value="Female" name="gender">
+                Other<input type="radio" value="Other" name="gender">
+            </div>
+
+            <div>
+                <label for="laung">English Proficiency :</label> <br>
+                <input type="checkbox" name="check1" value="beginner" id="abc">
+                <label for="laung">begineer</label>
+                <input type="checkbox" name="check2" value="intermediate" id>
+                <label for="laung">intermediate</label>
+                <input type="checkbox" name="check3" value="advanced">
+                <label for="laung">advanced</label>
+                <input type="checkbox" name="check4" value="native">
+                <label for="laung">native</label>
+            </div>
+            <div> <label for="lang"> other Known launguage</label>
+                <input type="text" name="lang">
+
+                <label for="school name">Current School Name :</label>
+                <input type="text" name="school name">
+            </div>
+            <label for="school adress">Current school address :</label>
+            <input type="text" name="school adress" placeholder="street address">
+            <input type="text" placeholder="street address line2">
+            <div>
+                <input  class="box" type="txet" placeholder="city">
+                <input class="box" type="txet" placeholder="Region">
+            </div>
+            <div>
+                <input class="box" type="zip code" placeholder="postal/Zip code">
+                <input class="box" type="Country" placeholder="Country">
+            </div>
+            <div>
+                <label for="school adress">Current school year/Grade :</label>
+                <input type="text" name="school adress" placeholder="Grade">
+            </div>
+            <div>
+                <label for="school adress">Number of Successfully Completed years of schooling :</label>
+                <input type="text" name="school adress">
+            </div>
+            <div> <label for="Date">Possible Start Date :</label>
+                <input  class="inp" type="date" name="Date" required>
+            </div>
+            <div>
+                <label> Courses :</label>
+                <select class="inp" >
+                    <option value="Course">Course</option>
+                    <option value="ADIT">ADIT</option>
+                    <option value="ELECTRICIAN">ELECTRICIAN</option>
+                    <option value="FITTER">FITTER</option>
+                    <option value="B.SC">B.SC</option>
+                    <option value="M.SC">M.SC</option>
+                    <option value="ITI">ITI</option>
+                    <option value="SELF EMPLYOED">SELF EMPLOYED</option>
+                </select>
+            </div>
+            <label for="file">File name:</label>
+            <input type="file" name="file">
+            <div>
+                <label>Phone :</label>
+                <input type="text" name="country code" maxlength="10" value="+91" size="2" />
+            </div>
+            Residential Address :
+            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required>
+            </textarea>
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Enter Password" name="pass" required>
+
+            <label for="pass-repeat">Re-type Password</label>
+            <input type="password" placeholder="Retype Password" name="pass-repeat" required>
+            <button type="submit" class="submit">SUBMIT</button>
+            <button type="Reset" class="inp" id="">RESET</button>
+        </div>
+    </form>
+    <div ><a class="a" href=>Too see Ibm form</a> <button><a href="http://127.0.0.1:5500/sign%20up%20form.html" target="_blank">click here</a></button></div>
+</body>
+
+</html>
